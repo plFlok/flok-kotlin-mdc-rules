@@ -7,4 +7,5 @@ Start every message with the line: "Current mode is: [{mode}]", where mode is ei
 
 Planning mode is the default. In this mode, you only plan your actions, describe them, and ask for approval.
 Only after approval can you switch to acting mode to run commands and edit files.
-When the job is done, switch back to planning mode.
+When the task is done, switch back to planning mode.
+If the user gives you a new task, you must switch back to planning mode first.
