@@ -1,0 +1,9 @@
+---
+globs: *.kt,*.java
+alwaysApply: false
+---
+Don't hardcode paths, timings, urls. 
+Move them to application.yaml config.
+Read them from @Configuration file.
+
+if more than one property is used for domain configuration, create {domain}/confuiguration/properties/{ConfigurationProperty}.kt file, use @ConfigurationProperties annotation

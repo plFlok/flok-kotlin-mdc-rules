@@ -1,0 +1,7 @@
+---
+alwaysApply: true
+---
+# Comments rule
+Don't write comments inside functions.
+It's allowed to write documentation to function (a.k.a. javadoc), but only if its behavior is not obvious from the signature and surrounding context. 
+If you doubt whether a comment is necessary, then it is not necessary.

@@ -1,0 +1,22 @@
+description: When creating a new feature
+alwaysApply: false
+---
+
+# Perfect project structure description
+
+Ask about the domain being used.
+For every domain, the following directories should exist:
+
+{domainName}/domain/models/ – directory for domain structures. No logic should be placed here, only raw data structures.
+{domainName}/domain/service/ – service classes with the main business logic. May refer to classes in the same domain or to services from other domains.
+{domainName}/dal/mappers – optional directory. Contains mapping classes that convert models to other models or DTOs and vice versa. No business logic should be here.
+{domainName}/configuration – directory with @Configuration classes. Defines @Bean functions for services and other classes of the current domain.
+{domainName}/configuration/properties – directory for ConfigurationProperties structures, mapped to the configuration in resources/application.yaml.
+{domainName}/dal/dao/repositories – directory for classes that work with storage (e.g., reading and writing data).
+{domainName}/dal/dao/managers – directory for classes that include one or more repositories and build models from entities for service classes.
+{domainName}/dal/dao/entities – directory for data classes representing records in storage. No logic should be placed here.
+{domainName}/dal/dao/mappers – directory for mappers that directly convert entities to models and vice versa. No business logic should be here.
+
+Multiple domains can exist at the same level or be nested. Ask the user about the best placement for a new domain.
+
+If any of these directories is empty, it should not be created.

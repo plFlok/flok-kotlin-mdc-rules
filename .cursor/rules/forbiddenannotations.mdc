@@ -1,0 +1,8 @@
+---
+globs: *.kt
+alwaysApply: false
+---
+
+# Annotation rules
+Don't ever use annotations @Component, @Service.
+Confugure beans in @Configuration classes explicitly
