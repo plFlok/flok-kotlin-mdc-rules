@@ -2,11 +2,12 @@
 globs: *.kt
 alwaysApply: false
 ---
-# mapper code
-For mapping methods transforming one structure to another create methods outside class.
 
-For remapping class A to class B is better to create method
+# Mapper code
+For mapping methods that transform one structure into another, create functions outside the class.
+
+For remapping class A to class B, it is better to define an extension function:
 fun A.toB(): B
 
-You can create methods inside class only if Mapper closures some variables from configuration.
-For example: mapper instance can hold fallback logo path from application.yaml, injected from @Configuration
+You may define methods inside a class only if the mapper needs to capture some variables from the configuration.
+For example, a mapper instance can hold a fallback logo path from application.yaml, injected via @Configuration.

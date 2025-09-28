@@ -2,6 +2,7 @@
 globs: *.kt,*.java
 alwaysApply: false
 ---
-# interface first
-For every Service class must be created interface file. Service implements interface.
-For every Dao class must be created interface file. DAO implements DAO interface.
+
+# Interface first
+An interface must be created for every Service class, and the Service must implement this interface.  
+An interface must be created for every DAO class, and the DAO must implement its interface.

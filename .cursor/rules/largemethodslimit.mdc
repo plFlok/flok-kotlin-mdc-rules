@@ -2,6 +2,6 @@
 globs: *.kt,*.java,*.py
 alwaysApply: false
 ---
-# small functions
-Try to limit functon size to 50 lines.
-Move filter, enriching and other block of business logic to separate method
+# Small functions
+Try to limit function size to 50 lines.
+Move filtering, enrichment, and other blocks of business logic into separate methods.

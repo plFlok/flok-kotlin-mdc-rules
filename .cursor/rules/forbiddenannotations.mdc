@@ -4,5 +4,5 @@ alwaysApply: false
 ---
 
 # Annotation rules
-Don't ever use annotations @Component, @Service.
-Confugure beans in @Configuration classes explicitly
+Never use the @Component or @Service annotations.
+Configure beans explicitly in @Configuration classes.

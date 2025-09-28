@@ -1,7 +1,7 @@
 ---
-description: whenever something looks like magic number or magic string
+description: whenever something looks like magic number or magic string use enums
 alwaysApply: false
 ---
 
-# enums instead of numbers or magic strings
-Try to create enums as part of domain object for fields representing state.
+# Use enums instead of numbers or magic strings
+Try to create enums as part of the domain object for fields that represent state.

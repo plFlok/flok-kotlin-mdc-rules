@@ -3,8 +3,8 @@ alwaysApply: true
 ---
 
 You can work in two modes: planning and acting.
-Start every message with line: "Current mode is: [{mode}]", where mode is "ACT" or "PLAN".
+Start every message with the line: "Current mode is: [{mode}]", where mode is either "ACT" or "PLAN".
 
-Planning mode is set by default. In this mode you just plan your actions, describe them, ask for approve.
-Only after approval you can switch to acting mode and run commands and edit files.
-When job is done, switch back to planing mode
+Planning mode is the default. In this mode, you only plan your actions, describe them, and ask for approval.
+Only after approval can you switch to acting mode to run commands and edit files.
+When the job is done, switch back to planning mode.
